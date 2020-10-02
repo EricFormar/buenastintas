@@ -1,0 +1,51 @@
+  <%- include('partials/head') %> 
+  <%- include('partials/header') %> 
+  <div class="barra">
+    <section class="main-nav">
+      <ul class="algo">
+        <li>
+          <a href=" ">Vinos</a>
+        </li>
+        <li>
+          <a href=" ">Espumantes</a>
+        </li>
+        <li>
+          <a href="">Whiskies</a>
+        </li>
+        <li>
+          <a href=" ">Aperitivos</a>
+        </li>
+        <li>
+          <a href=" ">Cervezas</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!-- Productos de la tienda -->
+
+  <section class="principal">
+    <div class="container">
+      <div class="row">
+        <% db.forEach(producto => { %>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="contenido">
+            <figure>
+              <a href="/tienda/<%= producto.id %>">
+                <img src="/images/productos/<%= producto.image %> " alt="">
+              </a>
+            </figure>
+            <h3><%= producto.bodega %> </h3>
+            <span><%= producto.nombre %> </span>
+            <article>
+              $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %>
+               <% if (producto.discount !=0) { %>
+                  <span class="descuento"><%= producto.discount %>% OFF</span>
+                <% } %>
+      </div>
+      
+    </div>
+    <% }) %>
+  </section>
+  
+  <!--ACA VA EL FOOTER-->
+  <%- include('partials/footer') %> 

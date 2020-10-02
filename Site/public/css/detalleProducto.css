@@ -1,0 +1,93 @@
+@import "style.css";
+
+.principales{
+  margin-top: 25px;
+}
+.productos{
+  background-color:var(--color-grisClaro);
+}
+.productos img{
+    width: 100%;
+}
+p, .productos span{
+  color: var(--color-violeta);
+  font-size: 18px;
+  text-align: left;
+}
+.productos h2, .productos h3, .productos h4 {
+    margin-top: 30px;
+    color: var(--color-negro);
+    text-align: left;
+}
+.productos .contenido {
+    padding: 15px;
+}
+.productos button {
+    background-color: var(--color-violeta);
+    border: 0;
+    color: var(--color-blanco);
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+@media(min-width:768px) {
+
+    .productos img {
+        width: 95%;
+    }
+    .productos h2 {
+        font-size: 35px;
+    }
+    .productos p {
+        font-size: 18px;
+    }
+}
+@media(min-width:1024px) {
+    .productos .contenido {
+        padding: 10px;
+    }
+    .productos h2 {
+        font-size: 38px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .productos img {
+        width: 80%;
+    }
+   .productos h4{
+        font-size: 25px;
+        padding-bottom: 35px;
+    }
+    .productos .datos {
+        padding-top: 25px;
+        border-left: 2px solid var(--color-violeta);
+        padding-left: 20px;
+    }
+    .productos button {
+        margin-top:40px;
+    }
+}
+@media(min-width:1440px) {
+    .productos .datos {
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    .productos img {
+        width: 70%;
+    }
+    .productos h2 {
+        font-size: 45px;
+    }
+    .productos p {
+        font-size: 18px;
+    }
+    .productos h4{
+        font-size: 30px;
+    }
+    .productos button {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+}

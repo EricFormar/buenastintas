@@ -1,0 +1,61 @@
+/*
+-- IMPORTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*
+-- VARIABLES 
+*/
+:root{
+
+    --color-blanco: white;
+    --color-naranja-claro: #f1bc49ef;
+    --color-naranja-oscuro: #cf7500;
+    --color-negro: #000000;
+    --color-violeta: #70416d;
+    --color-grisClaro: #ebebeb;
+}
+*{
+    box-sizing: border-box;
+    margin:0
+}
+body {
+    font-family: 'DM Sans', 'Roboto';
+    font-weight: 300;
+    background-image: url('../images/home/71190047-vector-dibujado-a-mano-ilustración-el-lúpulo-y-la-cebada-patrón-sin-fisuras-en-el-fondo-de-color-beige-patrón-de-.jpg');
+}
+  
+  a {
+    text-decoration: none;
+    color: black
+  }
+  a:hover{
+    color: var(--color-naranja-claro);
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+.principal .titulo h2{
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-negro);
+    padding: 30px;
+}
+
+.principal .contenido{
+    background-color:var(--color-grisClaro);
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+
+} 

@@ -1,0 +1,40 @@
+  <%- include('partials/head') %> 
+  <%- include('partials/header') %> 
+    <div class="container">
+      <div class="principales">
+        <div class="row productos">
+          <div class="contenido">
+            <div class="contenido text-left">
+              <div class="row">
+                  <div class="col-12 col-lg-8">
+                      <figure class="text-center">
+                          <img src="/images/productos/<%=producto.image%> " alt=<%= producto.image %> class="img-fluid">
+                      </figure>
+                      <p>
+                         <%= producto.description %> 
+                      </p>
+                  </div>
+                  <div class="col-12 col-lg-4 datos">
+                      <h2 class="my-4">
+                         <%= producto.nombre %> 
+                      </h2>
+                      <h4 class="my-4">
+                        <%= producto.bodega %> 
+                      </h4>
+                      <h4>
+                        <%= producto.varietal %> <%= producto.año %> 
+                      </h4>
+                      <span><strike>$<%= producto.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></strike> <strong> <%= producto.discount %>  % OFF</strong></span>
+                      <h2>
+                        $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %> 
+                      </h2>
+                      <button>Comprar ahora</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--ACA VA EL FOOTER-->
+  <%- include('partials/footer') %> 

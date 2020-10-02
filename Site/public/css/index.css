@@ -1,0 +1,80 @@
+
+@import "style.css";
+
+
+/*Color a las Redes sociales */
+.fa-twitter:hover{
+  color: lightskyblue;
+}
+.fa-facebook-square:hover{
+  color:blue
+}
+
+.fa-youtube:hover{
+  color: red;
+}
+.fa-instagram:hover{
+  color: violet
+}
+.principal article h2{
+
+  align-items: center;
+  text-align: center;
+}
+#carouselExampleControls{
+  display: none;
+}
+.contenido{
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 10%;
+
+}
+.contenido img{
+  width: 90%;
+  height: 350px;
+  border-radius: 10%;
+}
+.contenido a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+a:hover{
+  color: var(--color-naranja-claro);
+  text-decoration: none;
+}
+.contenido .titulo{
+  align-content: center;
+}
+.contenido p{
+  color: var(--color-violeta);
+}
+
+@media (min-width:1024px){
+  #carouselExampleControls{
+    display: inline-flex;
+    width: 100%;
+    height: 250px;
+
+  }
+  .contenido {
+    margin-left: 70px;
+  }
+}
+@media (min-width:1440px){
+  #carouselExampleControls{
+    height: 355px;
+  }
+  .contenido p{
+    font-size: 1.25rem;
+    }
+}
+@media (min-width:1700px){
+  #carouselExampleControls{
+    height: 475px;
+  }
+  .contenido p{
+  font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,107 @@
+@import "header2.css";
+
+/* Formulario */
+.form{
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+}
+.grupo-form{
+    font-size: 20px;
+}
+
+.images{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.grupo-form label, .grupo-form input{
+    display: block;  
+    margin: 5px 10px;
+}
+.grupo-form input{
+    border: black solid 1px;
+    border-radius: 4px;
+    width: 90%;
+}
+.terminos-condiciones{
+    margin: 10px 35px;
+}
+#contra{
+    padding-left:60px;
+    margin-top: 20px;
+}
+#boton-recordar{
+    margin-left: 27%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button{
+    background-color:black;
+    color:white;
+    border: white 1px solid;
+    border-radius: 4px;
+    padding:2px 25px ;
+    margin-left: 55px;
+}
+.button-algo{
+    margin-left: 30px;
+} 
+.form2{
+    border-top: black solid 1px;
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+#registrarse{
+    padding-left: 15%;
+}
+/* --- AJUSTES VERSION PARA TABLET (768px) --- */
+
+@media(min-width:768px){
+    /* Formulario */
+    .form{
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .grupo-form label, .grupo-form input{
+        margin: 5px 25px;
+    }
+    .terminos-condiciones{
+        margin-left: 20%;
+    }
+    .button-algo{
+        margin-left: 50px;
+    } 
+    #contra{
+        margin-left: 5%;
+    }
+    #registrarse{
+        padding-left: 70px;
+    }
+    #boton{
+        margin-left: 70px;
+    }
+}
+
+
+/* --- AJUSTES VERSION PARA ESCRITORIO (1024px) --- */
+
+@media(min-width:1024px){
+    /* Formulario */
+    .form{
+        width: 40%;
+    }
+    #registrarse{
+        padding-left: 80px;
+    }
+}
